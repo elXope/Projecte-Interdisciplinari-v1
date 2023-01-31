@@ -13,30 +13,69 @@
 }
 
 body {
-    background-color: gray;
+    background-color: var(--bg-color);
+    background: linear-gradient(336deg, rgba(250,202,30,1) 0%, rgba(0,106,238,1) 100%);
 }
 
-/* .calendari {
-    background-color: aqua;
+.calendari {
+    /* box-shadow: 0px 0px 23px 3px rgba(255,255,255,1); */
+    box-shadow: 0px 0px 26px -1px rgba(255,255,255,1);
+    backdrop-filter: blur(1rem);
 }
-
+/*
 .tasques {
     background-color: blanchedalmond;
 } */
 
 .color3 {
-    background-color: var(--main-color-dark);
+    background-color: rgba(var(--main-color-dark), 0.1);
     color: var(--main-color-light);
 }
 
 .calendari__nomDies {
     height: 3em;
+    color: antiquewhite;
+    background: rgb(250,202,30);
+    background: linear-gradient(336deg, rgba(250,202,30,1) 0%, rgba(0,106,238,1) 100%);
 }
 
 .calendari__setmana {
     height: calc((100% - 3em) / 6);
+    /* background-color: var(--main-color-light); */
+    background-color: rgba(var(--main-color-dark), 0.1);
+    backdrop-filter: blur(1rem);
+    color: antiquewhite;
 }
 
 .calendari__dia {
-    background-color: var(--main-color-light);
+    overflow-y: auto;
+}
+
+.calendari__dia:hover {
+    background-color: rgba(250,202,30,.3);
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.tasca {
+    background-color: var(--main-color);
+}
+
+.scroll::-webkit-scrollbar {
+    width: 5px;
+}
+
+.scroll::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+#mes {
+    opacity: 25%;
+    z-index: -1;
 }

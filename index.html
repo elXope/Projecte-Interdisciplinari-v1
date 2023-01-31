@@ -11,154 +11,173 @@
 <body>
     <div class="pantalla container-fluid vh-100">
         <div class="row h-100">
-            <div class="calendari col-sm-12 col-lg-8">
-                <div class="row h-100 p-2">
-                    <div class="h-100">
-                        <div class="row calendari__nomDies color3 rounded-top">
-                            <div class="col calendari__nomDia"><p class="fs-3">Dilluns</p></div>
-                            <div class="col calendari__nomDia"><p class="fs-3">Dimarts</p></div>
-                            <div class="col calendari__nomDia"><p class="fs-3">Dimecres</p></div>
-                            <div class="col calendari__nomDia"><p class="fs-3">Dijous</p></div>
-                            <div class="col calendari__nomDia"><p class="fs-3">Divendres</p></div>
-                            <div class="col calendari__nomDia"><p class="fs-3">Dissabte</p></div>
-                            <div class="col calendari__nomDia"><p class="fs-3">Diumenge</p></div>
+            <div class="col-sm-12 col-lg-8">
+                <div class="row h-100 p-3">
+                    <div class="h-100 rounded position-relative calendari">
+                        <h1 id="mes" class="display-1 position-absolute text-uppercase mt-4">Març</h1>
+                        <div class="row calendari__nomDies rounded-top">
+                            <div class="col calendari__nomDia"><p class="fs-4 mt-1">Dilluns</p></div>
+                            <div class="col calendari__nomDia"><p class="fs-4 mt-1">Dimarts</p></div>
+                            <div class="col calendari__nomDia"><p class="fs-4 mt-1">Dimecres</p></div>
+                            <div class="col calendari__nomDia"><p class="fs-4 mt-1">Dijous</p></div>
+                            <div class="col calendari__nomDia"><p class="fs-4 mt-1">Divendres</p></div>
+                            <div class="col calendari__nomDia"><p class="fs-4 mt-1">Dissabte</p></div>
+                            <div class="col calendari__nomDia"><p class="fs-4 mt-1">Diumenge</p></div>
                         </div>
                         <div class="row calendari__setmana">
-                            <div class="col calendari__dia">
-                                <h2>30</h2>
+                            <div class="col calendari__dia text-muted">
+                                <span>30</span>
+                            </div>
+                            <div class="col calendari__dia text-muted">
+                                <span>31</span>
                             </div>
                             <div class="col calendari__dia">
-                                <h2>31</h2>
+                                <span>1</span>
                             </div>
                             <div class="col calendari__dia">
-                                <h2>1</h2>
+                                <span>2</span>
                             </div>
                             <div class="col calendari__dia">
-                                <h2>2</h2>
+                                <span>3</span>
                             </div>
                             <div class="col calendari__dia">
-                                <h2>3</h2>
+                                <span>4</span>
                             </div>
                             <div class="col calendari__dia">
-                                <h2>4</h2>
-                            </div>
-                            <div class="col calendari__dia">
-                                <h2>5</h2>
-                            </div>
-                        </div>
-                        <div class="row calendari__setmana">
-                            <div class="col calendari__dia">
-                                <h2>6</h2>
-                            </div>
-                            <div class="col calendari__dia">
-                                <h2>7</h2>
-                            </div>
-                            <div class="col calendari__dia">
-                                <h2>8</h2>
-                            </div>
-                            <div class="col calendari__dia">
-                                <h2>9</h2>
-                            </div>
-                            <div class="col calendari__dia">
-                                <h2>10</h2>
-                            </div>
-                            <div class="col calendari__dia">
-                                <h2>11</h2>
-                            </div>
-                            <div class="col calendari__dia">
-                                <h2>12</h2>
+                                <span>5</span>
                             </div>
                         </div>
                         <div class="row calendari__setmana">
                             <div class="col calendari__dia">
-                                <h2>13</h2>
+                                <span>6</span>
                             </div>
                             <div class="col calendari__dia">
-                                <h2>14</h2>
+                                <span class="float-start me-2">7</span>
+                                <ul class="list-unstyled">
+                                    <li class="tasca rounded">Anar a pel pà</li>
+                                    <li class="tasca rounded">Bon dia</li>
+                                </ul>
+                            </div>
+                            <div class="col calendari__dia h-100 scroll">
+                                <span>8</span>
+                                <ul class="list-unstyled">
+                                    <li class="tasca rounded mb-1 ps-1 pe-1 text-break">Anar a pel pàaaaaaaaaaaaaaaaaaaa</li>
+                                    <li class="tasca rounded mb-1 ps-1 pe-1">Bon dia</li>
+                                </ul>
+                            </div>
+                            <div class="col calendari__dia h-100 scroll">
+                                <span>9</span>
+                                <ul class="list-unstyled">
+                                    <li class="tasca rounded mb-1 ps-1 pe-1 text-truncate">Anar a pel pàaaaaaaaaaaaaaaaaaaa</li>
+                                    <li class="tasca rounded mb-1 ps-1 pe-1">Bon dia</li>
+                                    <li class="tasca rounded mb-1 ps-1 pe-1 text-truncate">Anar a pel pàaaaaaaaaaaaaaaaaaaa</li>
+                                    <li class="tasca rounded mb-1 ps-1 pe-1">Bon dia</li>
+                                    <li class="tasca rounded mb-1 ps-1 pe-1 text-truncate">Anar a pel pàaaaaaaaaaaaaaaaaaaa</li>
+                                    <li class="tasca rounded mb-1 ps-1 pe-1">Bon dia</li>
+                                    <li class="tasca rounded mb-1 ps-1 pe-1 text-truncate">Anar a pel pàaaaaaaaaaaaaaaaaaaa</li>
+                                    <li class="tasca rounded mb-1 ps-1 pe-1">Bon dia</li>
+                                </ul>
                             </div>
                             <div class="col calendari__dia">
-                                <h2>15</h2>
+                                <span>10</span>
                             </div>
                             <div class="col calendari__dia">
-                                <h2>16</h2>
+                                <span>11</span>
                             </div>
                             <div class="col calendari__dia">
-                                <h2>17</h2>
-                            </div>
-                            <div class="col calendari__dia">
-                                <h2>18</h2>
-                            </div>
-                            <div class="col calendari__dia">
-                                <h2>19</h2>
-                            </div>
-                        </div>
-                        <div class="row calendari__setmana">
-                            <div class="col calendari__dia">
-                                <h2>20</h2>
-                            </div>
-                            <div class="col calendari__dia">
-                                <h2>21</h2>
-                            </div>
-                            <div class="col calendari__dia">
-                                <h2>22</h2>
-                            </div>
-                            <div class="col calendari__dia">
-                                <h2>23</h2>
-                            </div>
-                            <div class="col calendari__dia">
-                                <h2>24</h2>
-                            </div>
-                            <div class="col calendari__dia">
-                                <h2>25</h2>
-                            </div>
-                            <div class="col calendari__dia">
-                                <h2>26</h2>
+                                <span>12</span>
                             </div>
                         </div>
                         <div class="row calendari__setmana">
                             <div class="col calendari__dia">
-                                <h2>27</h2>
+                                <span>13</span>
                             </div>
                             <div class="col calendari__dia">
-                                <h2>28</h2>
+                                <span>14</span>
                             </div>
                             <div class="col calendari__dia">
-                                <h2>1</h2>
+                                <span>15</span>
                             </div>
                             <div class="col calendari__dia">
-                                <h2>2</h2>
+                                <span>16</span>
                             </div>
                             <div class="col calendari__dia">
-                                <h2>3</h2>
+                                <span>17</span>
                             </div>
                             <div class="col calendari__dia">
-                                <h2>4</h2>
+                                <span>18</span>
                             </div>
                             <div class="col calendari__dia">
-                                <h2>5</h2>
+                                <span>19</span>
+                            </div>
+                        </div>
+                        <div class="row calendari__setmana">
+                            <div class="col calendari__dia">
+                                <span>20</span>
+                            </div>
+                            <div class="col calendari__dia">
+                                <span>21</span>
+                            </div>
+                            <div class="col calendari__dia">
+                                <span>22</span>
+                            </div>
+                            <div class="col calendari__dia">
+                                <span>23</span>
+                            </div>
+                            <div class="col calendari__dia">
+                                <span>24</span>
+                            </div>
+                            <div class="col calendari__dia">
+                                <span>25</span>
+                            </div>
+                            <div class="col calendari__dia">
+                                <span>26</span>
+                            </div>
+                        </div>
+                        <div class="row calendari__setmana">
+                            <div class="col calendari__dia">
+                                <span>27</span>
+                            </div>
+                            <div class="col calendari__dia">
+                                <span>28</span>
+                            </div>
+                            <div class="col calendari__dia">
+                                <span>1</span>
+                            </div>
+                            <div class="col calendari__dia">
+                                <span>2</span>
+                            </div>
+                            <div class="col calendari__dia">
+                                <span>3</span>
+                            </div>
+                            <div class="col calendari__dia">
+                                <span>4</span>
+                            </div>
+                            <div class="col calendari__dia">
+                                <span>5</span>
                             </div>
                         </div>
                         <div class="row calendari__setmana rounded-bottom">
                             <div class="col calendari__dia">
-                                <h2>6</h2>
+                                <span>6</span>
                             </div>
                             <div class="col calendari__dia">
-                                <h2>7</h2>
+                                <span>7</span>
                             </div>
                             <div class="col calendari__dia">
-                                <h2>8</h2>
+                                <span>8</span>
                             </div>
                             <div class="col calendari__dia">
-                                <h2>9</h2>
+                                <span>9</span>
                             </div>
                             <div class="col calendari__dia">
-                                <h2>10</h2>
+                                <span>10</span>
                             </div>
                             <div class="col calendari__dia">
-                                <h2>11</h2>
+                                <span>11</span>
                             </div>
                             <div class="col calendari__dia">
-                                <h2>12</h2>
+                                <span>12</span>
                             </div>
                         </div>
                     </div>

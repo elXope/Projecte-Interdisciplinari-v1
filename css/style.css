@@ -2,10 +2,37 @@
     height: 100vh;
 } */
 
-.calendari {
+:root {
+    --main-color: #5500BD;
+    --main-color-dark: #3F008C;
+    --main-color-light: #7300FF;
+    --secondary-color: #BDBA00;
+    --secondary-color-dark: #949100;
+    --secondary-color-light: #E8E400;
+    --bg-color: #081696;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+/* .calendari {
     background-color: aqua;
 }
 
 .tasques {
     background-color: blanchedalmond;
+} */
+
+.color3 {
+    background-color: var(--main-color-dark);
+    color: var(--secondary-color-light);
+}
+
+.calendari__nomDies {
+    height: 3em;
+}
+
+.calendari__setmana {
+    height: calc((100% - 3em) / 6);
 }

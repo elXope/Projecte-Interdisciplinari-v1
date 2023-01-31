@@ -3,17 +3,17 @@
 } */
 
 :root {
-    --main-color: #5500BD;
-    --main-color-dark: #3F008C;
-    --main-color-light: #7300FF;
+    --main-color: #0000FF;
+    --main-color-dark: #000C66;
+    --main-color-light: #7EC8E3;
     --secondary-color: #BDBA00;
     --secondary-color-dark: #949100;
     --secondary-color-light: #E8E400;
-    --bg-color: #081696;
+    --bg-color: #050A30;
 }
 
 body {
-    background-color: var(--bg-color);
+    background-color: gray;
 }
 
 /* .calendari {
@@ -26,7 +26,7 @@ body {
 
 .color3 {
     background-color: var(--main-color-dark);
-    color: var(--secondary-color-light);
+    color: var(--main-color-light);
 }
 
 .calendari__nomDies {
@@ -35,4 +35,8 @@ body {
 
 .calendari__setmana {
     height: calc((100% - 3em) / 6);
+}
+
+.calendari__dia {
+    background-color: var(--main-color-light);
 }

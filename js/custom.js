@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(window).load(function() {
 
     // Contingut noms dies
     (function() {
@@ -20,5 +20,18 @@ $(document).ready(function() {
             }
         });
     })();
+
+    // Llibreta tatxar
+    // alert('ee');
+    // (function() {
+    //     alert('ee');
+    //     $('.form-check-input').change(function() {
+    //         alert('ee');
+    //         if($(this).prop('checked')) {
+                
+    //             $(this).parent().addClass('text-muted');
+    //         }
+    //     });
+    // })();
 
 });

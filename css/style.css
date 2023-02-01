@@ -14,15 +14,20 @@
 
 body {
     background-color: var(--bg-color);
-    background: linear-gradient(336deg, rgba(250,202,30,1) 0%, rgba(0,106,238,1) 100%);
-    /* background-image: url(../img/daniel-pelaez-duque-dkV29S2J-Qc-unsplash.jpg); */
+    /* background: linear-gradient(336deg, rgba(250,202,30,1) 0%, rgba(0,106,238,1) 100%); */
+    background-image: url(../img/daniel-pelaez-duque-dkV29S2J-Qc-unsplash.jpg);
     background-size: cover;
+    background-attachment: fixed;
+}
+
+.vh-95 {
+    height: 95vh;
 }
 
 .calendari {
     /* box-shadow: 0px 0px 23px 3px rgba(255,255,255,1); */
     box-shadow: 0px 0px 26px -1px rgba(255,255,255,1);
-    backdrop-filter: blur(.8rem);
+    backdrop-filter: blur(.3rem);
 }
 /*
 .tasques {
@@ -38,7 +43,7 @@ body {
     height: 3em;
     color: antiquewhite;
     background: rgb(250,202,30);
-    background: linear-gradient(336deg, rgba(250,202,30,1) 0%, rgba(0,106,238,1) 100%);
+    background: linear-gradient(336deg, rgba(250,202,30,.5) 0%, rgba(0,106,238,.5) 100%);
 }
 
 .calendari__setmana {
@@ -65,13 +70,13 @@ body {
 }
 
 .scroll::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
     border-radius: 10px;
 }
 
 .scroll::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
 }
 
 #mes {

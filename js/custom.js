@@ -1,11 +1,11 @@
-$(window).load(function() {
+$(document).ready(function() {
 
     // Contingut noms dies
     (function() {
         $(window).resize(function() {
             let diesMin = ['Dll', 'Dt', 'Dm', 'Dj', 'Dv', 'Ds', 'Dg'];
             let diesMax = ['Dilluns', 'Dimarts', 'Dimecres', 'Dijous', 'Divendres', 'Dissabte', 'Diumenge'];
-            if ($(this).width() < 1410) {
+            if ($('.calendari').width() < 760) {
                 let cont = 0;
                 $('.calendari__nomDia p').each(function() {
                     $(this).text(diesMin[cont]);
@@ -22,16 +22,18 @@ $(window).load(function() {
     })();
 
     // Llibreta tatxar
-    // alert('ee');
-    // (function() {
-    //     alert('ee');
-    //     $('.form-check-input').change(function() {
-    //         alert('ee');
-    //         if($(this).prop('checked')) {
-                
-    //             $(this).parent().addClass('text-muted');
-    //         }
-    //     });
-    // })();
+    (function() {
+        $('.form-check-input').change(function() {
+            if($(this).prop('checked')) {
+                $(this).parent().addClass('text-muted');
+                $(this).siblings().addClass('text-decoration-line-through');
+                $('.llibreta').append($(this).parent());
+            } else {
+                $(this).parent().removeClass('text-muted');
+                $(this).siblings().removeClass('text-decoration-line-through');
+                $(this).parent().insertBefore($('.form-check-input').parent('.text-muted')[0]);
+            }
+        });
+    })();
 
 });
